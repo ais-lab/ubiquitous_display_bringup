@@ -1,0 +1,8 @@
+<launch>
+
+  <include file="$(find ubiquitous_display_bringup)/launch/ubiquitous_display_model.launch"/>
+  <include file="$(find ubiquitous_display_bringup)/launch/ubiquitous_display_lidar.launch"/>
+  <include file="$(find ubiquitous_display_bringup)/launch/ubiquitous_display_pantilt.launch"/>
+  <include file="$(find ubiquitous_display_bringup)/launch/ubiquitous_display_merge.launch"/>
+
+</launch>
