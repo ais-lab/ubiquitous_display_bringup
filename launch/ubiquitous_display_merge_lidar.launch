@@ -4,7 +4,9 @@
     <param name="destination_frame" value="/base_scan"/>
     <param name="cloud_destination_topic" value="/merged_cloud"/>
     <param name="scan_destination_topic" value="/scan"/>
-    <param name="laserscan_topics" value ="/rear_laser_scan /front_laser_scan" /> 
+    <param name="laserscan_topics" value ="/rear_laser_scan /front_laser_scan" />
+    <!--param name="/laserscan_multi_merger/angle_max" value="3.14" /-->
+    <!--param name="/laserscan_multi_merger/angle_min" value="-3.14" /--> 
   </node>
 
 </launch>
