@@ -1,0 +1,17 @@
+<launch>
+
+  <node pkg="ira_laser_tools" name="laserscan_multi_merger_1" type="laserscan_multi_merger" output="screen">
+    <param name="destination_frame" value="ubiquitous_display/base_scan"/>
+    <param name="cloud_destination_topic" value="ubiquitous_display/toumerged_cloud"/>
+    <param name="scan_destination_topic" value="ubiquitous_display/scan"/>
+    <param name="laserscan_topics" value ="/ubiquitous_display/rear_laser_scan /ubiquitous_display/front_laser_scan" /> 
+  </node>
+
+  <node pkg="ira_laser_tools" name="laserscan_multi_merger_2" type="laserscan_multi_merger" output="screen">
+    <param name="destination_frame" value="ubiquitous_display2/base_scan"/>
+    <param name="cloud_destination_topic" value="ubiquitous_display2/merged_cloud"/>
+    <param name="scan_destination_topic" value="ubiquitous_display2/scan"/>
+    <param name="laserscan_topics" value ="/ubiquitous_display2/rear_laser_scan /ubiquitous_display2/front_laser_scan" /> 
+  </node>
+
+</launch>
